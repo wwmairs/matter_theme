@@ -26,6 +26,13 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "ghost/comments.css";
 
 
+/* Fonts */
+@font-face {
+    font-family: "ms gothic";
+    src: url("../fonts/ms-gothic.ttf");
+}
+
+
 
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
