@@ -1,6 +1,6 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A starter theme for Ghost theme development",
+    "name": "matter",
+    "description": "a custom ghost theme for everything matters, built from the bones of the ghost starter theme",
     "demo": "https://starter.ghost.io",
     "version": "1.0.0",
     "engines": {
