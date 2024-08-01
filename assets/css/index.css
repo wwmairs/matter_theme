@@ -45,7 +45,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
     width: 100vw;
     background-color: darkgreen;
     mix-blend-mode: screen;
-    z-index: 11;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -56,7 +56,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
     height: 100vh;
     width: 70vw;
     mix-blend-mode: screen;
-    z-index: 11;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -80,6 +80,7 @@ html,
 
 .gh-article {
     padding: 8vmin 0;
+    margin: 2vmin;
 }
 
 .gh-postfeed {
@@ -211,7 +212,7 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-header {
-    padding: 0 0 8vmin 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -229,9 +230,9 @@ html,
 }
 
 .gh-feature-image {
-    grid-column: wide-start / wide-end;
+    grid-column: main-start / full-end;
     width: 100%;
-    margin: 8vmin 0 0;
+    margin: 0;
 }
 
 .gh-feature-image img {

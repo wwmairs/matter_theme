@@ -20,7 +20,12 @@
 }
 
 .gh-canvas > * {
-    grid-column: main-start / main-end;
+/*    grid-column: main-start / main-end;*/
+    grid-column: main-start / full-end;
+}
+
+.gh-title {
+    text-align: justify;
 }
 
 .kg-width-wide,
@@ -125,7 +130,7 @@
 
 figcaption {
     padding: 1.5rem 1.5rem 0;
-    text-align: center;
+    text-align: right;
     color: rgba(0,0,0,0.5);
     font-weight: 600;
     font-size: 1.3rem;
