@@ -37,6 +37,30 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
 
+#color-screen1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30vw;
+    background-color: red;
+    mix-blend-mode: screen;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#color-screen2 {
+    position: fixed;
+    top: 0;
+    left: 30vw;
+    height: 100vh;
+    width: 70vw;
+    background-color: blue;
+    mix-blend-mode: screen;
+    z-index: 10;
+    pointer-events: none;
+}
+
 html,
 .gh-viewport {
     display: flex;
@@ -52,7 +76,7 @@ html,
 }
 
 .gh-page {
-    padding: 0 4vmin;
+    padding: 0 2vmin;
 }
 
 .gh-article {
@@ -61,18 +85,20 @@ html,
 
 .gh-postfeed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-    gap: 4.8vmin 4vmin;
-    padding: 8vmin 0;
+    grid-template-columns: repeat(auto-fit, minmax(min(calc(50vw - 6vmin), 100%), 1fr));
+    gap: 2vmin 2vmin;
+    padding: 1vmin 0;
 }
 
+/*
 .gh-postfeed > *:first-child {
     grid-column: 1 / -1;
 }
+*/
 
 .gh-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 

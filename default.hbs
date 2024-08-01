@@ -24,9 +24,19 @@
 
 </head>
 <body class="{{body_class}}">
+<div id="color-screen1"></div>
+<div id="color-screen2"></div>
 <div class="gh-viewport">
 
 <header id="gh-head" class="gh-head">
+    <div class="gh-head-inner gh-head-subtitle gh-container">
+        <h6 class="gh-head-smalltext">
+Everything Matters is a publishing house established in 2024 by yo & wwmairs. Due to the fact that everything matters, we find publishing words and images to be an urgent task.
+        </h6>
+        <h6 class="gh-head-smalltext" style="text-align: right;">
+            {{navigation type="secondary"}}
+        </h6>
+    </div>
     <nav class="gh-head-inner gh-container">
 
         <div class="gh-head-brand">
@@ -46,6 +56,7 @@
         <div class="gh-head-menu">
             {{navigation}}
         </div>
+        <!--
         <div class="gh-head-actions">
             <div class="gh-head-actions-list">
                 {{search}}
@@ -58,7 +69,31 @@
                 {{/if}}
             </div>
         </div>
+        -->
     </nav>
+    <div class="gh-head-inner gh-head-subtitle gh-container">
+        <h6 class="gh-head-smalltext">
+            <span id="clock"></span>
+            <script>
+                function startTime() {
+                    const today = new Date();
+                    var parts = today.toString().split(" ");
+                    var first = parts.slice(0, 4).join(" ");
+                    let dateString = `${first} ◆ ${parts[4]}`;
+                    document.getElementById("clock").innerHTML = dateString;
+                    setTimeout(startTime, 1000);
+                }
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i};
+                    return i;
+                }
+                window.addEventListener("load", () => {startTime()});
+            </script>
+        </h6>
+        <h6 class="gh-head-smalltext" style="text-align: right;">
+            CART (0)
+        </h6>
+    </div>
 </header>
 
 <main class="gh-main">
@@ -71,7 +106,7 @@
 <footer class="gh-foot">
     <div class="gh-container">
         <div class="gh-foot-menu">
-            {{navigation type="secondary"}}
+            
         </div>
         <div class="gh-foot-meta">
         </div>
