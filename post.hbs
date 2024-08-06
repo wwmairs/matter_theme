@@ -8,12 +8,6 @@
         <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
         <h1 class="gh-title">{{title}}</h1>
 
-        <!--
-        {{#has tag="#forsale"}}
-            {{og_title}}
-        {{/has}}
-        -->
-        
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}
@@ -64,6 +58,7 @@
     </header>
 
     <div class="gh-content gh-canvas">
+        {{> "buy-button"}}
         {{content}}
     </div>
 
@@ -73,6 +68,8 @@
             Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
         </div>
 
+
+
         {{#if comments}}
         <section class="gh-post-comments">
             {{comments}}
@@ -80,6 +77,8 @@
         {{/if}}
 
     </footer>
+
+    
 
 </article>
 

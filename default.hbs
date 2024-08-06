@@ -16,6 +16,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
 
     <title>{{meta_title}}</title>
 
@@ -87,7 +88,10 @@ Everything Matters is a print & digital publishing house established in 2024 by 
             </script>
         </h6>
         <h6 class="gh-head-smalltext" style="text-align: right;">
-            CART (0)
+            <a href="#" class="snipcart-checkout">
+                CART
+                (<span class="snipcart-items-count"></span>)
+            </a>
         </h6>
     </div>
 </header>
@@ -114,6 +118,8 @@ Everything Matters is a print & digital publishing house established in 2024 by 
 {{!-- <foot> --}}
 {{ghost_foot}}
 {{!-- Outputs important scripts - should always be included before closing body tag --}}
+<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="ZjM0YzI0NDEtMTAyNi00OGUxLWE5NTAtOWY2YjJjNTMzYmU3NjM4NTgwNDczODIxOTAyOTEx"></div>
 
 </body>
 </html>

@@ -60,6 +60,20 @@ production stylesheet in assets/built/screen.css using: npm run dev
     pointer-events: none;
 }
 
+.buy-button {
+    margin-top: 2vmin;
+}
+
+.buy-button button {
+    float: right;
+}
+
+.buy-button button:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
 html,
 .gh-viewport {
     display: flex;
