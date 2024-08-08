@@ -45,7 +45,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
     width: 100vw;
     background-color: red;
     mix-blend-mode: screen;
-    z-index: 1000;
     pointer-events: none;
 }
 
@@ -56,7 +55,6 @@ production stylesheet in assets/built/screen.css using: npm run dev
     height: 100vh;
     width: 70vw;
     mix-blend-mode: screen;
-    z-index: 1000;
     pointer-events: none;
 }
 
@@ -71,7 +69,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 .buy-button button:hover {
     cursor: pointer;
     position: relative;
-    z-index: 1001;
+    z-index: 1;
 }
 
 html,
