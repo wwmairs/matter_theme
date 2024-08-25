@@ -43,10 +43,11 @@ production stylesheet in assets/built/screen.css using: npm run dev
     left: 0;
     height: 100vh;
     width: 100vw;
+/*    background-color: darkgreen;*/
     background-color: red;
     mix-blend-mode: screen;
     pointer-events: none;
-    z-index: 15;
+    z-index: 901;
 }
 
 #color-screen2 {
@@ -70,7 +71,12 @@ production stylesheet in assets/built/screen.css using: npm run dev
 .buy-button button:hover {
     cursor: pointer;
     position: relative;
-    z-index: 20;
+    z-index: 901;
+}
+
+.home-container {
+    display: grid;
+    grid-gap: 2vmin;
 }
 
 html,
@@ -78,7 +84,8 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #ffffff;
+    background: white;
+/*    background: palevioletred;*/
 }
 
 .gh-main {
@@ -177,6 +184,8 @@ html,
     text-justify: newspaper;
     font-size: 1.6rem;
 }
+
+.home-snippet > .
 
 .gh-card-content p {
     margin: 0;
@@ -301,5 +310,11 @@ html,
 @media (max-width: 700px) {
     .gh-author-meta {
         font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .home-container {
+
     }
 }

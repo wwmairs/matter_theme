@@ -75,7 +75,7 @@ img {
 
 img:hover {
     position: relative;
-    z-index: 20;
+    z-index: 902;
 }
 
 input,
