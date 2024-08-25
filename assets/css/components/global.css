@@ -78,6 +78,13 @@ img:hover {
     z-index: 902;
 }
 
+@media(max-width: 500px) {
+    img {
+        position: relative;
+        z-index: 902;
+    }
+}
+
 input,
 button,
 select,
