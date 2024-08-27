@@ -8,7 +8,11 @@
         <h1 class="gh-title">{{title}}</h1>
         {{#has tag="article"}}
             <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
-
+            {{#has tag="article"}}
+                <div class="gh-post-authors">
+                    by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+                </div>
+            {{/has}}
             {{#if custom_excerpt}}
             <p class="gh-excerpt">{{custom_excerpt}}</p>
             {{/if}}
@@ -66,11 +70,7 @@
 
     <footer class="gh-footer gh-canvas">
 
-        {{#has tag="article"}}
-            <div class="gh-post-authors">
-                Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-            </div>
-        {{/has}}
+        
 
 
 

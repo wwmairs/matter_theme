@@ -185,7 +185,11 @@ html,
     font-size: 1.6rem;
 }
 
-.home-snippet > .
+@media (max-width: 500px) {
+    .home-snippet:not(:last-child) {
+        border-bottom: 2px dashed;
+    }       
+}
 
 .gh-card-content p {
     margin: 0;
@@ -245,6 +249,11 @@ html,
     letter-spacing: 0.5px;
     text-transform: uppercase;
     opacity: 0.8;
+}
+
+.gh-post-authors {
+    text-transform: uppercase;
+    font-family: var(--font-sans-serif);
 }
 
 .gh-excerpt {
