@@ -67,6 +67,12 @@ ol[class] {
     list-style: none;
 }
 
+strong {
+    font-family: var(--font-sans-serif);
+    text-transform: uppercase;
+    font-size: larger;
+}
+
 img {
     display: block;
     max-width: 100%;

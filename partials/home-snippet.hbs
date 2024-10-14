@@ -52,7 +52,11 @@ Re-usable card for linking to posts
             <span class="gh-card-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
             -->
             <h2 class="gh-card-title">{{title}}</h2>
-            <p>{{ excerpt }}</p>
+            {{#has tag="article"}}
+                <p>{{ excerpt }}</p>
+            {{else has tag="#forsale"}}
+                <h2 style="font-family: var(--font-serif)">${{ og_title }}</h2>
+            {{/has}}
         </div>
     </a>
 </article>

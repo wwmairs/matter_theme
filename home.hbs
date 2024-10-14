@@ -4,7 +4,7 @@
         <div class="home-container">
             <div class="gh-postfeed home-container-section items-forsale">
                 <h1>books, etc.</h1>
-                {{#get "posts" filter="tag:hash-forsale" limit="3" as |items pages|}}
+                {{#get "posts" filter="tag:hash-forsale" limit="3" include="tags" as |items pages|}}
                     {{#foreach items}}
                         {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
                     {{/foreach}}
@@ -12,7 +12,7 @@
             </div>
             <div class="gh-postfeed home-container-section articles" style="background-color:#222;color:white;padding:2vmin;">
                 <h1>words & images</h1>
-                {{#get "posts" filter="primary_tag:article" limit="3" as |items pages|}}
+                {{#get "posts" filter="primary_tag:article" limit="3" include="tags" as |items pages|}}
                     {{#foreach items}}
                         {{!-- partials/card.hbs --}}
                         {{> "home-snippet" page=../pages.page }}
