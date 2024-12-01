@@ -3,7 +3,12 @@
     <div class="gh-container">
         <div class="home-container">
             <div class="gh-postfeed home-container-section items-forsale">
-                <h1>books, etc.</h1>
+                <div style="position: relative;">
+                    <h1>books, etc.</h1>
+                    <h2 style="position: absolute; width: 100%; bottom: 0; text-align: right;">
+                        <a href="/shop/">see 'em all &rarr;</a>
+                    </h2>
+                </div>
                 {{#get "posts" filter="tag:hash-forsale" limit="3" include="tags" as |items pages|}}
                     {{#foreach items}}
                         {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
