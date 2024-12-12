@@ -64,6 +64,10 @@ production stylesheet in assets/built/screen.css using: npm run dev
     margin-top: 2vmin;
 }
 
+.snipcart-modal__container {
+    z-index: 901 !important;
+}
+
 .buy-button button {
     float: right;
 }
