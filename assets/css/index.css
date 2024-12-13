@@ -65,7 +65,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .snipcart-modal__container {
-    z-index: 901 !important;
+    z-index: 902 !important;
 }
 
 .buy-button button {
