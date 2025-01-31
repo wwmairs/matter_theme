@@ -2,27 +2,32 @@
 <div class="gh-page">
     <div class="gh-container">
         <div class="home-container">
-            <div class="gh-postfeed home-container-section items-forsale">
-                <div style="position: relative; min-height: 200px;">
-                    <h1>books, etc.</h1>
-                    <h2 style="position: absolute; width: 100%; bottom: 0; text-align: right;">
-                        <a href="/shop/">see 'em all &rarr;</a>
+            <div>
+                <h1><a href="/print/">print</a></h1>
+                <div class="gh-postfeed home-container-section items-forsale">
+                    {{#get "posts" filter="tag:[book,print]" limit="3" include="tags" as |items pages|}}
+                        {{#foreach items}}
+                            {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
+                        {{/foreach}}
+                    {{/get}}
+                    <h2>
+                        <a href="/print/">more&rarr;</a>
                     </h2>
                 </div>
-                {{#get "posts" filter="tag:hash-forsale" limit="3" include="tags" as |items pages|}}
-                    {{#foreach items}}
-                        {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
-                    {{/foreach}}
-                {{/get}}
             </div>
-            <div class="gh-postfeed home-container-section articles" style="background-color:#222;color:white;padding:2vmin;">
-                <h1>words & images</h1>
-                {{#get "posts" filter="primary_tag:article" limit="3" include="tags" as |items pages|}}
-                    {{#foreach items}}
-                        {{!-- partials/card.hbs --}}
-                        {{> "home-snippet" page=../pages.page }}
-                    {{/foreach}}
-                {{/get}}
+            <div class="gh-postfeed home-container-section articles" >
+                <h1><a href="/articles/">not print</a></h1>
+                <div style="background-color:#222;color:white;padding:2vmin; border-radius: 1rem;">
+                    {{#get "posts" filter="primary_tag:article" limit="3" include="tags" as |items pages|}}
+                        {{#foreach items}}
+                            {{!-- partials/card.hbs --}}
+                            {{> "home-snippet" page=../pages.page }}
+                        {{/foreach}}
+                    {{/get}}
+                    <h2>
+                        <a href="/articles/">more&rarr;</a>
+                    </h2>
+                </div>
             </div>
             
         </div>

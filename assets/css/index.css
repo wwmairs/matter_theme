@@ -83,6 +83,31 @@ production stylesheet in assets/built/screen.css using: npm run dev
     grid-gap: 2vmin;
 }
 
+
+
+img {
+    border-radius: 1rem;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h1 > a {
+    color: black !important;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: block;
+    margin: none;
+}
+
+h1 > a:hover {
+    color: #fff !important;
+    -webkit-text-stroke: 1px black;
+    background-color: #ccc !important;
+    border: none;
+}
+
 html,
 .gh-viewport {
     display: flex;
@@ -112,6 +137,11 @@ html,
     grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: 2vmin 2vmin;
     padding: 1vmin 0;
+    border-radius: 1rem;
+}
+
+.items-forsale {
+    grid-column: 1 / 2;
 }
 
 /*
@@ -165,6 +195,7 @@ html,
     margin-bottom: 1vmin;
     aspect-ratio: 1 / 1;
     background: white;
+    border: 1px solid black;
 }
 
 .gh-card-image:first-of-type {
@@ -329,6 +360,6 @@ html,
 
 @media (min-width: 700px) {
     .home-container {
-
+        grid-template-columns: 5fr 2fr;
     }
 }
