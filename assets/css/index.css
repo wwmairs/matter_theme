@@ -213,6 +213,10 @@ html,
     opacity: 0.8;
 }
 
+.gh-card-title {
+    font-size: 3rem;   
+}
+
 .gh-card-content {
     max-width: 720px;
     margin: 0;
