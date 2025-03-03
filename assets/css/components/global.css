@@ -84,8 +84,17 @@ img:hover {
     z-index: 902;
 }
 
+iframe:hover {
+    position: relative;
+    z-index: 902;
+}
+
 @media(max-width: 500px) {
     img {
+        position: relative;
+        z-index: 902;
+    }
+    iframe {
         position: relative;
         z-index: 902;
     }
