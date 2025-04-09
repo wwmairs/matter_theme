@@ -300,17 +300,6 @@ html,
     margin: 1rem 0 0 0;
 }
 
-.gh-feature-image {
-    grid-column: main-start / full-end;
-    width: 100%;
-    margin: 0;
-}
-
-.gh-feature-image img {
-    margin-inline: auto;
-    width: 100%;
-}
-
 .gh-post-footer {
     margin: 2rem 0;
 }
@@ -360,10 +349,29 @@ html,
     .gh-author-meta {
         font-size: 1.6rem;
     }
+    .gh-feature-image {
+        grid-column: main-start / full-end;
+        width: 100%;
+        margin: 0;
+    }
+
+    .gh-feature-image img {
+        margin-inline: auto;
+        width: 100%;
+    }
 }
 
 @media (min-width: 700px) {
     .home-container {
         grid-template-columns: 5fr 2fr;
+    }
+    .gh-feature-image {
+        grid-column: main-start / full-end;
+        margin: 0;
+    }
+
+    .gh-feature-image img {
+        max-height: 90vh;
+        float: right;
     }
 }
