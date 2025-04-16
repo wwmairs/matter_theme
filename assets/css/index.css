@@ -60,6 +60,32 @@ production stylesheet in assets/built/screen.css using: npm run dev
     pointer-events: none;
 }
 
+p {
+    text-indent: 5rem;
+}
+
+
+.gh-content ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gh-content li {
+    list-style-type: none;
+    font-family: var(--font-sans-serif);
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gh-content li::before {
+    content: "\2192  ";
+}
+
+.gh-content li::after {
+    content: "  \2190";
+}
+
 .buy-button {
     margin-top: 2vmin;
 }
@@ -81,6 +107,23 @@ production stylesheet in assets/built/screen.css using: npm run dev
 .home-container {
     display: grid;
     grid-gap: 2vmin;
+}
+
+.ink-swatches {
+    position: relative;
+    z-index: 902;
+}
+
+.ink-swatches li {
+    border-radius: .5rem;
+}
+
+.ink-swatches li:hover {
+    box-shadow: 0 0 4.2px 0px rgba(128,0,0, 0.4);
+}
+
+.ink-swatches li+li {
+    margin-top: 1rem;
 }
 
 
@@ -373,5 +416,23 @@ html,
     .gh-feature-image img {
         max-height: 90vh;
         float: right;
+    }
+
+    .columns {
+        border-top: 2px dashed black;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        columns: 2;
+        column-rule: 2px dashed black;
+    }
+
+    .columns > * {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .columns > h1 {
+        /*margin-top: 0 !important;
+        break-before: column;*/
     }
 }

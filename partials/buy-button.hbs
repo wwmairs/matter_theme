@@ -2,18 +2,16 @@
 Re-usable snipcart buy button
 --}}
 
-{{#has tag="#forsale"}}
-    <div class="buy-button">
-        <h3>${{ og_title }}
-            <button class="snipcart-add-item"
-              data-item-id="{{slug}}"
-              data-item-price="{{og_title}}"
-              data-item-url="{{url}}"
-              data-item-description="{{excerpt}}"
-              data-item-image="{{img_url feature_image size="m"}}"
-              data-item-name="{{title}}">
-              add to cart
-            </button>
-        </h3>
-    </div>
-{{/has}}
+<div class="buy-button">
+    <h3>${{ og_title }}
+        <button class="snipcart-add-item"
+          data-item-id="{{slug}}"
+          data-item-price="{{og_title}}"
+          data-item-url="{{url}}"
+          data-item-description="{{excerpt}}"
+          data-item-image="{{img_url feature_image size="m"}}"
+          data-item-name="{{title}}">
+          add to cart
+        </button>
+    </h3>
+</div>
