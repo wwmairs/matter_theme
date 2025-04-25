@@ -64,7 +64,9 @@
     </header>
 
     <div class="gh-content gh-canvas">
-        {{> "buy-button"}}
+        {{#has tag="hash-forsale"}}
+            {{> "buy-button"}}
+        {{/has}}
         {{content}}
     </div>
 

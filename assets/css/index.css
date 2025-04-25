@@ -37,6 +37,21 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
 
+/*** overwriting hosted style rules ***/
+.kg-file-card a.kg-file-card-container {
+    color: black;
+    border: 1px solid black !important;
+    transition: none !important;
+}
+
+.kg-file-card:hover a.kg-file-card-container:hover {
+    z-index: 903;
+    box-shadow: 0 0 4.2px 0px rgba(128,0,0, 0.4);
+}
+
+/*** ----------------------------- ***/
+
+
 #color-screen1 {
     position: fixed;
     top: 0;
@@ -59,6 +74,13 @@ production stylesheet in assets/built/screen.css using: npm run dev
     mix-blend-mode: screen;
     pointer-events: none;
 }
+
+/*a:hover {
+    color: blue !important;
+    z-index: 903;
+    border-color: blue !important;
+    position: relative;
+}*/
 
 p {
     text-indent: 5rem;
@@ -116,6 +138,8 @@ p {
 
 .ink-swatches li {
     border-radius: .5rem;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 .ink-swatches li:hover {
@@ -124,6 +148,10 @@ p {
 
 .ink-swatches li+li {
     margin-top: 1rem;
+}
+
+.columns > *+* {
+    margin-top: 4vmin;
 }
 
 
@@ -185,6 +213,14 @@ html,
 
 .items-forsale {
     grid-column: 1 / 2;
+}
+
+.print-packages {
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+}
+
+stripe-pricing-table {
+    z-index: 903;
 }
 
 /*
@@ -404,10 +440,16 @@ html,
     }
 }
 
+
 @media (min-width: 700px) {
     .home-container {
         grid-template-columns: 5fr 2fr;
     }
+
+    .home-container > div:first-child {
+        padding-top: 1vmin;
+    }
+
     .gh-feature-image {
         grid-column: main-start / full-end;
         margin: 0;
