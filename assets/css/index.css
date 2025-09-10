@@ -429,7 +429,7 @@ stripe-pricing-table {
         font-size: 1.6rem;
     }
     .gh-feature-image {
-        grid-column: main-start / full-end;
+        grid-column: full-start / full-end;
         width: 100%;
         margin: 0;
     }
@@ -451,7 +451,7 @@ stripe-pricing-table {
     }
 
     .gh-feature-image {
-        grid-column: main-start / full-end;
+        grid-column: full-start / full-end;
         margin: 0;
     }
 
