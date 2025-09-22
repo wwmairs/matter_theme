@@ -77,11 +77,12 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    z-index: 903;
+    position: relative;
 }
 
 img:hover {
-    position: relative;
-    z-index: 902;
+    z-index: 1;
 }
 
 iframe:hover {

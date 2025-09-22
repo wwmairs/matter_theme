@@ -58,8 +58,8 @@ production stylesheet in assets/built/screen.css using: npm run dev
     left: 0;
     height: 100vh;
     width: 100vw;
-/*    background-color: darkgreen;*/
-    background-color: red;
+    background-color: blue;
+/*    background-color: red;*/
     mix-blend-mode: screen;
     pointer-events: none;
     z-index: 901;
@@ -157,7 +157,6 @@ p {
 
 
 img {
-    border-radius: 1rem;
 }
 
 h1 {
@@ -274,7 +273,8 @@ stripe-pricing-table {
     margin-bottom: 1vmin;
     aspect-ratio: 1 / 1;
     background: white;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
+    box-shadow: 0 0 4px 0px rgba(0,0,0,0.1);
 }
 
 .gh-card-image:first-of-type {

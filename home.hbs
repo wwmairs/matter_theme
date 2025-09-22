@@ -17,7 +17,7 @@
             </div>
             <div class="gh-postfeed home-container-section articles" >
                 <h1><a href="/articles/">not print</a></h1>
-                <div style="background-color:#222;color:white;padding:2vmin; border-radius: 1rem;">
+                <div>
                     {{#get "posts" filter="primary_tag:article" limit="3" include="tags" as |items pages|}}
                         {{#foreach items}}
                             {{!-- partials/card.hbs --}}
