@@ -73,6 +73,10 @@
     line-height: 1.6em;
 }
 
+.gh-canvas > p {
+    text-align: justify;
+}
+
 .gh-content > ul,
 .gh-content > ol,
 .gh-content > dl {
