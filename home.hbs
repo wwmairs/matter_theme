@@ -5,7 +5,7 @@
             <div>
                 <h1><a href="/print/">print</a></h1>
                 <div class="gh-postfeed home-container-section items-forsale">
-                    {{#get "posts" filter="tag:[book,print,zine,em-mag]" limit="10" include="tags" as |items pages|}}
+                    {{#get "posts" filter="tag:[book,print,zine]" limit="10" include="tags" as |items pages|}}
                         {{#foreach items}}
                             {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
                         {{/foreach}}
