@@ -45,7 +45,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }
 
 .kg-file-card:hover a.kg-file-card-container:hover {
-    z-index: 903;
+    z-index: 902;
     box-shadow: 0 0 4.2px 0px rgba(128,0,0, 0.4);
 }
 
