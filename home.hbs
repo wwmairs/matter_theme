@@ -7,7 +7,7 @@
                 <div class="gh-postfeed home-container-section items-forsale">
                     {{#get "posts" filter="tag:[book,print,zine]" limit="10" include="tags" as |items pages|}}
                         {{#foreach items}}
-                            {{> "home-snippet" page=../pages.page }} {{!-- partials/card.hbs --}}
+                            {{> "home-snippet" page=../pages.page }}
                         {{/foreach}}
                     {{/get}}
                     <h2>
@@ -15,21 +15,6 @@
                     </h2>
                 </div>
             </div>
-            <div class="gh-postfeed home-container-section articles" >
-                <h1><a href="/articles/">not print</a></h1>
-                <div>
-                    {{#get "posts" filter="primary_tag:article" limit="3" include="tags" as |items pages|}}
-                        {{#foreach items}}
-                            {{!-- partials/card.hbs --}}
-                            {{> "home-snippet" page=../pages.page }}
-                        {{/foreach}}
-                    {{/get}}
-                    <h2>
-                        <a href="/articles/">more&rarr;</a>
-                    </h2>
-                </div>
-            </div>
-            
         </div>
     </div>
 </div>

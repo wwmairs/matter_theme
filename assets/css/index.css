@@ -446,9 +446,9 @@ stripe-pricing-table {
 
 
 @media (min-width: 700px) {
-    .home-container {
+    /*.home-container {
         grid-template-columns: 5fr 2fr;
-    }
+    }*/
 
     .home-container > div:first-child {
         padding-top: 1vmin;
