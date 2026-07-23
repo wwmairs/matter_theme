@@ -58,7 +58,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: var(--ghost-accent-color, #3eb0ef);
 /*    background-color: red;*/
     mix-blend-mode: screen;
     pointer-events: none;
@@ -83,7 +83,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 }*/
 
 p {
-    text-indent: 5rem;
+/*    text-indent: 5rem;*/
 }
 
 
@@ -133,6 +133,15 @@ p {
 .home-container {
     display: grid;
     grid-gap: 2vmin;
+}
+
+.product-header {
+    border: 1.5px solid black;
+    padding: 2rem;
+}
+
+.product-header hr {
+    margin-top: 1rem;
 }
 
 .ink-swatches {
@@ -442,6 +451,10 @@ stripe-pricing-table {
         margin-inline: auto;
         width: 100%;
     }
+    
+    .product-header img {
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -452,6 +465,16 @@ stripe-pricing-table {
 
     .home-container > div:first-child {
         padding-top: 1vmin;
+    }
+
+    .product-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .product-header  div {
+        position: relative;
     }
 
     .gh-feature-image {
