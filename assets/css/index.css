@@ -90,6 +90,7 @@ p {
 .gh-content ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-left: 0;
 }
 
 .gh-content li {
@@ -149,7 +150,7 @@ p {
     z-index: 902;
 }
 
-.ink-swatches li {
+.ink-swatches span {
     border-radius: .5rem;
     height: 4rem;
     line-height: 4rem;
@@ -451,7 +452,7 @@ stripe-pricing-table {
         margin-inline: auto;
         width: 100%;
     }
-    
+
     .product-header img {
         margin-bottom: 2rem;
     }
